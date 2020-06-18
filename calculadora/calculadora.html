@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Senai</title>
+    <link rel="stylesheet" href="../calculadora/style.css">
+  </head>
+  <body>
+    <header class="titulo">
+        <h1>Calculadora</h1>
+    </header>
+ <section class="calculadorabg">
+    <div class="calculadora">
+        <div class="calculadora_item">
+           <input class="input" type="number" name="numero" id="numero1" placeholder="Numero 1" />
+        </div>
+        <div class="calculadora_item">
+          <input class="input" type="number" name="numero" id="numero2" placeholder="Numero 2" />   
+        </div>
+        
+       <div class="calculadora_item">
+        <select class="input select" name="select" id="select">
+            <option value="adicao" id="adicao">Adição</option>
+            <option value="subtracao" id="subtracao">Subtração</option>
+            <option value="multiplicacao" id="multiplicacao">Multiplicação</option>
+            <option value="divisao" id="divisao">Divisão</option>
+          </select>
+       </div>
+       <div class="calculadora_item">  
+        <button class="btn" onclick="calcular()">
+            Resolver
+        </button>
+          <button class="btn" onclick="resetar()">Reset</button>
+       </div>
+       <div class="resolver">
+            <input
+            class="input_resolver"
+            type="number"
+            name="resultado"
+            id="resultado"
+            readonly
+            placeholder="Resultado"
+          />
+       </div>
+        
+     </div>
+ </section>
+    <script src="scripts/../calculo.js"></script>
+  </body>
+</html>
