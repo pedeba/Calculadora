@@ -27,7 +27,7 @@ input[type=number]::-webkit-outer-spin-button {
 body {
     font-family: 'Orbitron', sans-serif;
     color: #20EE0A;
-    background: url('../calculadora/bg.jpg') no-repeat center;
+    background: url('bg.jpg') no-repeat center;
     background-size: cover;
     
 
@@ -55,11 +55,6 @@ body {
     max-width: 960px;
 }
 
-.calculadora::after, .calculadora::before {
-    content: '';
-    display: table;
-    clear: both;
-}
 
 .calculadora_item {
     width: 460px;
